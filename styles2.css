@@ -342,7 +342,6 @@ body {
 
 .mobile-description-div {
     margin-top: 20vh;
-    display: grid;
     text-align: center;
     overflow-x: hidden;
 }
