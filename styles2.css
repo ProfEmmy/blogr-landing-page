@@ -12,7 +12,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .mobile-nav {
@@ -143,7 +143,6 @@ body {
 
 .mobile-product-div {
     display: grid;
-    justify-items: center;
     margin-top: 0;
     overflow-x: hidden;
 }
@@ -255,10 +254,7 @@ body {
 }
 
 .mobile-future-div {
-    width: 100%;
     margin-top: 14vh;
-    display: grid;
-    justify-items: center;
     text-align: center;
 }
 
@@ -281,6 +277,7 @@ body {
     font-family: 'Overpass', sans-serif;
     color: hsl(240, 2%, 79%);
     word-spacing: 2px;
+    line-height: 25px;
 }
 
 .mobile-infrastructure-wrapper {
@@ -347,7 +344,6 @@ body {
     width: 100%;
     margin-top: 20vh;
     display: grid;
-    justify-items: center;
     text-align: center;
     overflow-x: hidden;
 }
@@ -378,7 +374,7 @@ body {
     width: 100%;
     height: 150vh;
     background-color: hsl(237, 17%, 21%);
-    border-top-right-radius: 20%;
+    border-top-right-radius: 7%;
     display: grid;
     justify-content: center;
     text-align: center;
