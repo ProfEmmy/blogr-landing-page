@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+.mobile-nav,
+.mobile-main,
+.mobile-footer {
+    display: none;
+}
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+}
+
+.desktop-nav {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("images\\bg-pattern-intro-desktop.svg"), linear-gradient(to right, hsl(13, 100%, 72%), #ff6662);
+    background-position: 29% 50%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigators {
+    font-family: 'Overpass', sans-serif;
+    margin-top: 40px;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.navs-div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 170px auto;
+}
+
+.navs>div {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin-right: 27px;
+    cursor: pointer;
+}
+
+.login-signup-div {
+    justify-self: right;
+}
+
+.login-signup-div>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.login-signup-div>button {
+    font-weight: bold;
+    background-color: white;
+    border: 0px hsl(353, 100%, 62%);
+    border-radius: 40px;
+    width: 95px;
+    height: 40px;
+}
+
+.login-signup-div>button>a {
+    color: hsl(353, 100%, 62%);
+    text-decoration: none;
+}
+
+.hero-txt-div {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-txt {
+    font-family: 'Overpass', sans-serif;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 3em;
+}
+
+.hero-subtxt {
+    font-family: 'Overpass', sans-serif;
+    margin-top: -10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.more-info-div>button {
+    margin-top: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    width: 130px;
+    height: 45px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.start {
+    margin-right: 15px;
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    font-weight: bold;
+    border: 0px;
+}
+
+.learn-more {
+    background-color: #ff7166;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.future-div {
+    margin-top: 100px;
+}
+
+.future-heading {
+    position: absolute;
+    margin-top: 20px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.future-heading>h1 {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(237, 23%, 32%);
+}
+
+.future {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    width: 100vw;
+}
+
+.future-txt-div {
+    justify-self: center;
+    align-self: center;
+}
+
+.future-img-div>img {
+    height: 850px;
+    width: 830px;
+    margin-left: 50px;
+}
+
+.future-txt-div>div {
+    margin-top: 50px;
+}
+
+.future-txt-div>div>h2 {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(237, 23%, 32%);
+    font-size: 1.7em;
+    line-height: 30px;
+}
+
+.future-txt-div>div>p {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(240, 2%, 79%);
+    line-height: 1.7em;
+    word-spacing: 2px;
+}
+
+.infrastructur-wrapper {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.infrastructure-div {
+    /* display: flex;
+    align-items: center; */
+    width: 100vw;
+    height: 55vh;
+    background-color: hsl(237, 17%, 21%);
+    background-image: url("images\\bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -50% 80%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.inner-infrastructure-div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.infrastructure-img-div {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infrastructure-img-div>img {
+    margin-left: 7vw;
+}
+
+.infrastructure-txt-div {
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    color: white;
+}
+
+.infrastructure-txt-div>h1 {
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+    align-self: end;
+}
+
+.infrastructure-txt-div>p {
+    line-height: 25px;
+    margin-top: 0;
+    font-weight: lighter;
+    font-family: 'Overpass', sans-serif;
+    align-self: start;
+}
+
+.description-div {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+.description-img-div>img {
+    margin-left: -250px;
+}
+
+.description-txt-div {
+    align-self: center;
+    justify-self: left;
+    margin-left: 30px;
+}
+
+.description-txt-div>div {
+    margin-top: 70px;
+}
+
+.description-txt-div>div>h1 {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(237, 23%, 32%);
+    font-size: 1.7em;
+    line-height: 30px;
+}
+
+.description-txt-div>div>p {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(240, 2%, 79%);
+    line-height: 1.7em;
+    word-spacing: 2px;
+}
+
+.desktop-footer {
+    width: 100vw;
+    height: 65vh;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(237, 17%, 21%);
+    border-top-right-radius: 15%;
+}
+
+.footer-div {
+    /* margin-top: -30px; */
+    width: 80vw;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+}
+
+.footer-product,
+.footer-company,
+.footer-connect {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 1.2em;
+}
