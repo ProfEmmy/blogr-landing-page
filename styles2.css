@@ -8,7 +8,10 @@
 }
 
 body {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     overflow-x: hidden;
 }
 
@@ -22,7 +25,7 @@ body {
     width: 100vw;
     background-image: url("images\\bg-pattern-intro-mobile.svg"), linear-gradient(180deg, hsl(13, 100%, 72%), #ff6662);
     background-position: 31% 40%;
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 10%;
 }
 
 .mobile-nav-div {
@@ -58,7 +61,7 @@ body {
 .mobile-hero-txt {
     font-family: 'Overpass', sans-serif;
     color: white;
-    font-size: 2.3em;
+    font-size: 2em;
 }
 
 .mobile-hero-subtxt {
@@ -138,7 +141,10 @@ body {
 }
 
 .mobile-product-div {
+    display: grid;
+    justify-items: center;
     margin-top: 0;
+    overflow-x: hidden;
 }
 
 .mobile-product {
@@ -283,7 +289,7 @@ body {
 
 .mobile-infrastructure-imgdiv {
     width: 100vw;
-    margin-top: -25vh;
+    margin-top: -17vh;
     grid-area: overlap;
     margin-left: 0;
     display: grid;
@@ -305,8 +311,8 @@ body {
     background-image: url("images\\bg-pattern-circles.svg");
     background-position: 35% 130%;
     background-repeat: no-repeat;
-    border-top-right-radius: 25%;
-    border-bottom-left-radius: 20%;
+    border-top-right-radius: 7%;
+    border-bottom-left-radius: 7%;
 }
 
 .mobile-infrastructure {
@@ -340,6 +346,7 @@ body {
     display: grid;
     justify-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .mobile-description-txtdiv>div {
