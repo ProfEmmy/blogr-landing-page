@@ -275,7 +275,7 @@ body {
 
 .mobile-future-txtdiv>div>p {
     font-family: 'Overpass', sans-serif;
-    color: hsl(240, 2%, 79%);
+    color: hsl(207, 13%, 34%);
     word-spacing: 2px;
     line-height: 25px;
 }
@@ -338,6 +338,7 @@ body {
     margin-top: 0;
     font-weight: lighter;
     font-family: 'Overpass', sans-serif;
+    color: hsl(240, 2%, 79%);
 }
 
 .mobile-description-div {
@@ -358,7 +359,7 @@ body {
 
 .mobile-description-txtdiv>div>p {
     font-family: 'Overpass', sans-serif;
-    color: hsl(240, 2%, 79%);
+    color: hsl(207, 13%, 34%);
     line-height: 1.7em;
     word-spacing: 2px;
 }
@@ -371,7 +372,7 @@ body {
     margin-bottom: 0;
     width: 100%;
     height: 150vh;
-    background-color: hsl(237, 17%, 21%);
+    background-color: hsl(240, 10%, 16%);
     border-top-right-radius: 7%;
     display: grid;
     justify-content: center;
@@ -384,10 +385,15 @@ body {
     margin-top: 10vh;
 }
 
-.mobile-footer-product,
-.mobile-footer-company,
-.mobile-footer-connect {
+.mobile-footer-div>div>.mobile-footer-product,
+.mobile-footer-div>div>.mobile-footer-company,
+.mobile-footer-div>div>.mobile-footer-connect {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 5vh;
+    color: white;
+}
+
+.mobile-footer-div>div>p {
+    color: hsl(240, 2%, 79%);
 }

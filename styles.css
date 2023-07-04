@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
 
+@keyframes dropDown {
+    0% {
+        opacity: .1;
+    }
+
+    33% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        display: flex;
+        opacity: 1;
+    }
+
+    33% {
+        display: flex;
+        opacity: .5;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
 .mobile-nav,
 .mobile-main,
 .mobile-footer {
@@ -19,7 +50,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     width: 100vw;
-    height: 70vh;
+    height: 75vh;
     background-image: url("images\\bg-pattern-intro-desktop.svg"), linear-gradient(to right, hsl(13, 100%, 72%), #ff6662);
     background-position: 29% 50%;
     background-repeat: no-repeat;
@@ -42,12 +73,121 @@ body {
     grid-template-columns: 170px auto;
 }
 
-.navs>div {
-    display: inline;
+.navs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 350px;
+}
+
+.product-wrapper,
+.company-wrapper,
+.connect-wrapper {
     color: white;
     text-decoration: none;
-    margin-right: 27px;
     cursor: pointer;
+}
+
+.navs>div>div>span:hover {
+    text-decoration: underline;
+}
+
+.product-dropdown {
+    animation: dropDown .4s linear both;
+    position: absolute;
+    left: 22vw;
+    margin-top: 1.5vh;
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 10px;
+    border-radius: 5px;
+}
+
+.product-dropdown-div {
+    animation: positionText .3s linear both;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-dropdown-div>a {
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.product-dropdown-div>a:hover {
+    font-weight: bold;
+}
+
+.company-dropdown {
+    animation: dropDown .3s linear both;
+    position: absolute;
+    margin-top: 1.5vh;
+    left: 32vw;
+    height: 130px;
+    width: 130px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 10px;
+    border-radius: 5px;
+}
+
+.company-dropdown-div {
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-dropdown-div>a {
+    margin-top: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+.company-dropdown-div>a:hover {
+    font-weight: bold;
+}
+
+.connect-dropdown {
+    animation: dropDown .3s linear both;
+    position: absolute;
+    margin-top: 1.5vh;
+    left: 41vw;
+    height: 120px;
+    width: 120px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 10px;
+    border-radius: 5px;
+}
+
+.connect-dropdown-div {
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-dropdown-div>a {
+    margin-top: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+.connect-dropdown-div>a:hover {
+    font-weight: bold;
+}
+
+.display {
+    animation: disappear .2s linear both;
+}
+
+.hero-txt-div {
+    margin-top: 0;
 }
 
 .login-signup-div {
@@ -63,15 +203,18 @@ body {
 .login-signup-div>button {
     font-weight: bold;
     background-color: white;
+    color: hsl(353, 100%, 62%);
     border: 0px hsl(353, 100%, 62%);
     border-radius: 40px;
     width: 95px;
     height: 40px;
+    cursor: pointer;
+    transition: all .3s;
 }
 
-.login-signup-div>button>a {
-    color: hsl(353, 100%, 62%);
-    text-decoration: none;
+.login-signup-div>button:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
 }
 
 .hero-txt-div {
@@ -113,6 +256,12 @@ body {
     color: hsl(353, 100%, 62%);
     font-weight: bold;
     border: 0px;
+    transition: all .3s;
+}
+
+.start:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
 }
 
 .learn-more {
@@ -120,6 +269,12 @@ body {
     color: white;
     font-weight: bold;
     border: 1px solid white;
+    transition: all .3s;
+}
+
+.learn-more:hover {
+    background-color: white;
+    color: #ff7166;
 }
 
 .future-div {
@@ -170,7 +325,7 @@ body {
 
 .future-txt-div>div>p {
     font-family: 'Overpass', sans-serif;
-    color: hsl(240, 2%, 79%);
+    color: hsl(207, 13%, 34%);
     line-height: 1.7em;
     word-spacing: 2px;
 }
@@ -182,8 +337,6 @@ body {
 }
 
 .infrastructure-div {
-    /* display: flex;
-    align-items: center; */
     width: 100vw;
     height: 55vh;
     background-color: hsl(237, 17%, 21%);
@@ -229,6 +382,7 @@ body {
     font-weight: lighter;
     font-family: 'Overpass', sans-serif;
     align-self: start;
+    color: hsl(240, 2%, 79%);
 }
 
 .description-div {
@@ -260,7 +414,7 @@ body {
 
 .description-txt-div>div>p {
     font-family: 'Overpass', sans-serif;
-    color: hsl(240, 2%, 79%);
+    color: hsl(207, 13%, 34%);
     line-height: 1.7em;
     word-spacing: 2px;
 }
@@ -271,15 +425,17 @@ body {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(237, 17%, 21%);
+    background-color: hsl(240, 10%, 16%);
     border-top-right-radius: 15%;
 }
 
 .footer-div {
     /* margin-top: -30px; */
+    font-family: 'Overpass', sans-serif;
     width: 80vw;
     color: white;
     display: grid;
@@ -287,10 +443,22 @@ body {
     justify-items: center;
 }
 
-.footer-product,
-.footer-company,
-.footer-connect {
+
+
+.footer-div>div>.footer-product,
+.footer-div>div>.footer-company,
+.footer-div>div>.footer-connect {
+    color: white;
     font-weight: bold;
     margin-top: 0;
     font-size: 1.2em;
+}
+
+.footer-div>div>p {
+    color: hsl(240, 2%, 79%);
+    cursor: pointer;
+}
+
+.footer-div>div>p:hover {
+    text-decoration: underline;
 }
