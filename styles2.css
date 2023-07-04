@@ -100,7 +100,7 @@ body {
     height: 80vh;
     border-radius: 5px;
     position: absolute;
-    top: 17vh;
+    top: 15vh;
     box-shadow: 0px 4px 10px;
     display: flex;
     justify-content: center;
@@ -109,11 +109,11 @@ body {
 .navigator-div {
     width: 65vw;
     height: 75vh;
+    margin-top: -1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
 
 .navigator-div>div {
@@ -141,27 +141,21 @@ body {
     border-radius: 40px;
 }
 
-.mobile-product-div {
-    display: grid;
-    margin-top: 0;
-    overflow-x: hidden;
-}
-
 .mobile-product {
-    margin-top: -3vh;
+    margin-top: -1vh;
     background-color: hsl(240, 2%, 79%, .4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 65vw;
-    height: 30vh;
+    height: 35vh;
     border-radius: 5px;
     margin-bottom: 0;
 }
 
 .mobile-product>a {
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: .9em;
     color: hsl(237, 23%, 32%);
     text-decoration: none;
@@ -224,8 +218,6 @@ body {
     margin-bottom: 0;
 }
 
-
-
 .mobile-connect>a {
     margin-top: 3vh;
     font-size: .9em;
@@ -277,7 +269,7 @@ body {
     font-family: 'Overpass', sans-serif;
     color: hsl(207, 13%, 34%);
     word-spacing: 2px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .mobile-infrastructure-wrapper {
@@ -310,8 +302,6 @@ body {
     background-image: url("images\\bg-pattern-circles.svg");
     background-position: 35% 130%;
     background-repeat: no-repeat;
-    border-top-right-radius: 7%;
-    border-bottom-left-radius: 7%;
 }
 
 .mobile-infrastructure {
@@ -335,7 +325,6 @@ body {
 .mobile-infrastructure-txtdiv>p {
     font-size: 1em;
     line-height: 25px;
-    margin-top: 0;
     font-weight: lighter;
     font-family: 'Overpass', sans-serif;
     color: hsl(240, 2%, 79%);
@@ -344,7 +333,6 @@ body {
 .mobile-description-div {
     margin-top: 20vh;
     text-align: center;
-    overflow-x: hidden;
 }
 
 .mobile-description-txtdiv>div {
@@ -360,7 +348,7 @@ body {
 .mobile-description-txtdiv>div>p {
     font-family: 'Overpass', sans-serif;
     color: hsl(207, 13%, 34%);
-    line-height: 1.7em;
+    line-height: 30px;
     word-spacing: 2px;
 }
 
