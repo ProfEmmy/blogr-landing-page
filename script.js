@@ -84,20 +84,19 @@ menu_icon.addEventListener("click", () => {
 })
 
 mobile_connect.addEventListener("click", () => {
-    mobile_connect_div.classList.toggle("display")
+    mobile_connect_div.classList.remove("display")
     mobile_product_div.classList.add("display")
     mobile_company_div.classList.add("display")
 })
 
 mobile_product.addEventListener("click", () => {
-    mobile_product_div.classList.toggle("display")
+    mobile_product_div.classList.remove("display")
     mobile_connect_div.classList.add("display")
     mobile_company_div.classList.add("display")
 })
 
 mobile_company.addEventListener("click", () => {
-    mobile_company_div.classList.toggle("display")
+    mobile_company_div.classList.remove("display")
     mobile_connect_div.classList.add("display")
     mobile_product_div.classList.add("display")
 })
-

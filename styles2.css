@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .desktop-nav,
 .desktop-main,
@@ -22,11 +36,10 @@ body {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    /* width: 100vw; */
     width: 100%;
     background-image: url("images\\bg-pattern-intro-mobile.svg"), linear-gradient(180deg, hsl(13, 100%, 72%), #ff6662);
     background-position: 31% 40%;
-    border-bottom-left-radius: 10%;
+    border-bottom-left-radius: 30%;
 }
 
 .mobile-nav-div {
@@ -104,6 +117,7 @@ body {
     box-shadow: 0px 4px 10px;
     display: flex;
     justify-content: center;
+    animation: fadeIn .4s linear both;
 }
 
 .navigator-div {

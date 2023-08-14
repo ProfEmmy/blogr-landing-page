@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://profemmy.github.io/blogr-landing-page/)
+- Live Site URL: [Blogr Landing Page](https://profemmy.github.io/blogr-landing-page/)
 
 ## My process
 
