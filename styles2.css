@@ -41,7 +41,7 @@ body {
     width: 100%;
     background-image: url("images\\bg-pattern-intro-mobile.svg"), linear-gradient(180deg, hsl(13, 100%, 72%), #ff6662);
     background-position: 31% 40%;
-    border-bottom-left-radius: 30%;
+    border-bottom-left-radius: 10%;
 }
 
 .mobile-nav-div {
